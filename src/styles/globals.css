@@ -1,0 +1,109 @@
+/* Universal Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML and body */
+html, body {
+  height: 100%;
+  font-family: sans-serif; /* You can adjust this based on your preference */
+  line-height: 1.5;
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit; /* Let links inherit color from parent */
+}
+
+/* Remove default table styles */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove default form element styles */
+input, button, textarea, select {
+  background: transparent;
+  border: none;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  appearance: none; /* Remove input styles in some browsers like iOS */
+}
+
+
+/* Reset figure and caption */
+figure {
+  margin: 0;
+}
+
+caption {
+  text-align: left;
+}
+
+/* Reset the behavior of button elements */
+button {
+  cursor: pointer;
+}
+
+/* Prevent text selection on some elements */
+input, button, textarea, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Apply a basic font size and weight */
+body {
+  font-size: 16px;
+  font-weight: normal;
+  background-color: #fff;
+}
+
+/* Normalize form control appearance (optional) */
+input, textarea, select, button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Remove default styling on the <details> element */
+details {
+  display: block;
+}
+
+/* Add focus outline */
+:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+/* styles/globals.css or a separate header.css */
+
+.header {
+  background-color: #fff; /* Set background color */
+  display: flex;
+  align-items: center; /* Center the logo vertically */
+  height: 50px; /* Adjust height for your header */
+  padding: 0 40px; /* Optional padding if needed */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto; /* Ensure logo scales properly */
+}

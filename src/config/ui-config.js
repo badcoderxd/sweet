@@ -1,0 +1,1 @@
+export const MAX_WIDTH_DESKTOP = 1200;
