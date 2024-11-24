@@ -1,6 +1,6 @@
 import MaxWidthComponent from "../common/WithMaxWidth";
 import { HeroStyles } from "./HeroStyles";
-import MainImage from "../../assets/images.webp"
+import MainImage from "../../assets/Images.webp"
 import { MAX_WIDTH_DESKTOP } from "@/config/ui-config";
 import { LoadingButton } from "@mui/lab";
 
