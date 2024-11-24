@@ -5,6 +5,7 @@ export const HeroStyles = {
     heroMainWrapper:{
         display: "flex",
         justifyContent: "space-between",
+        flexDirection: {xs:"column", sm:"column",md:"row", lg:"row"}
     },
     leftSection:{display:"flex", height:"100%", justifyContent:"center", alignItems:"left", flexDirection:"column"},
     getStartedBtn:{

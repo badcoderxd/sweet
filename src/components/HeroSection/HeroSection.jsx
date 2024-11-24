@@ -30,7 +30,7 @@ const HeroSection = () => {
                                         </Box>
                                  </Box>
                         </Box>
-                        <Box>
+                        <Box sx={{ mt: {xs:4, sm:4,md:0, lg:0}}}>
                                     <img src={MainImage.src} width={"100%"} height={"100%"} style={{transform:"translate(0px,-4px)"}}/>
                            
                         </Box>
