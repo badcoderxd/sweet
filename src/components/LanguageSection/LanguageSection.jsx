@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react"
+import Link from "next/link"
 
 const { Box } = require("@mui/system")
 const { default: MaxWidthComponent } = require("../common/WithMaxWidth")
@@ -9,28 +10,32 @@ const Languages = [
         description: "JavaScript is the programming language of the web.",
         icon: "skill-icons:javascript",
         color: "rgba(235, 235, 255, 1)",
-        shortName:".js"
+        shortName:".js",
+        link:'/code/javascript'
     },
     {
         language: "Python",
         description: "JavaScript is the programming language of the web.",
         icon: "logos:python",
         color: "rgba(225, 247, 227, 1)",
-         shortName:".py"
+        shortName:".py",
+        link:'/code/python'
     },
     {
         language: "JAVA",
         description: "JavaScript is the programming language of the web.",
         icon: "devicon:java",
         color: "rgba(255, 240, 240, 1)",
-         shortName:".java"
+        shortName:".java",
+        link:'/code/java'
     },
     {
         language: "C",
         description: "JavaScript is the programming language of the web.",
         icon: "devicon:c",
         color: "rgba(255, 242, 229, 1)",
-        shortName:".js"
+        shortName:".c",
+        link:'/code/c'
     }
 ]
 
@@ -60,17 +65,20 @@ const LanguageSection = () => {
                                 {
                                     Languages.map((language, i) =>{
                                         return(
-                                            <Box sx={{
-                                                background:language.color, p:2, 
-                                                display:"flex", alignItems:"center"}}>
-                                               <Box sx={{mr:2}}>
-                                                <Icon icon={language.icon} height={40} width={40} style={{transform:"translate(0px,5px)"}} />
-                                               </Box>
-                                               <Box>
-                                                 <Box sx={{fontSize:"14px", fontWeight:700}}>{language.language}</Box>
-                                                 <Box sx={{fontSize:"10px", color:"rgba(110, 116, 133, 1)"}}>{language.shortName}</Box>
+                                            <Link href={language.link}>
+                                                <Box
+                                                sx={{
+                                                    background:language.color, p:2, 
+                                                    display:"flex", alignItems:"center"}}>
+                                                <Box sx={{mr:2}}>
+                                                    <Icon icon={language.icon} height={40} width={40} style={{transform:"translate(0px,5px)"}} />
                                                 </Box>
-                                            </Box>
+                                                <Box>
+                                                    <Box sx={{fontSize:"14px", fontWeight:700}}>{language.language}</Box>
+                                                    <Box sx={{fontSize:"10px", color:"rgba(110, 116, 133, 1)"}}>{language.shortName}</Box>
+                                                    </Box>
+                                                </Box>
+                                            </Link>
                                         )
                                     })
                                 }
