@@ -31,7 +31,7 @@ const CodeEditor = () => {
         setOutput('');
         setError(null);
        
-        const res = await axios.post("http://65.1.236.48/api/execute", {
+        const res = await axios.post("https://codingtreat.com/api/execute", {
             language: "python",
             code: code,
         })
