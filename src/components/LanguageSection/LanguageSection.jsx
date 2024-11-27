@@ -30,12 +30,12 @@ const Languages = [
         link:'/code/java'
     },
     {
-        language: "C",
+        language: "C++",
         description: "JavaScript is the programming language of the web.",
-        icon: "devicon:c",
+        icon: "vscode-icons:file-type-cpp3",
         color: "rgba(255, 242, 229, 1)",
-        shortName:".c",
-        link:'/code/c'
+        shortName:".cpp",
+        link:'/code/cpp'
     }
 ]
 
